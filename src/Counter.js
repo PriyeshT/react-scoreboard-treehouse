@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Counter extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      score: 0
+      score: this.props.initialScore
     };
   }
 
@@ -17,6 +18,10 @@ class Counter extends React.Component {
       </div>
     );
   }
+}
+
+Counter.propTypes = {
+  initialScore: PropTypes.number.isRequired
 }
 
 export default Counter;

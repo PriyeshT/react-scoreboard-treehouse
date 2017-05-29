@@ -6,7 +6,7 @@ import './app.css';
 const PLAYERS = [
   {
     name: "Priyesh Tungare",
-    score: 31,
+    score: 48,
     key: 1
   },
   {
